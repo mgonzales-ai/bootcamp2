@@ -13,6 +13,6 @@ console.log(capitalized);
 // that are between 50 and 75.
 //Hint 1: Use a filter method.
 //Hint 2: You can use a condition similar to the ones we learned in the conditionals session.
-//const numbers=[5,10,20,30,40,50,55,60,65,70,75];
-//const selectnumber=numbers.filter(n=> n>=50 && n<=75);
-//console.log(selectnumber);
+const numbers=[5,10,20,30,40,50,55,60,65,70,75];
+const selectnumber=numbers.filter(n=> n>=50 && n<=75);
+console.log(selectnumber);

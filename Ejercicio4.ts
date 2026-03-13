@@ -26,4 +26,4 @@ else
 
 console.log(`\Average score: ${accumulateGrade2/gradecounter1}`);
 }
-
+}

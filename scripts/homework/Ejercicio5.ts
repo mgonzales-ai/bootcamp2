@@ -1,28 +1,26 @@
-const grades1 : number[]=[60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60, 60];
-let countergrades:number=0;
-let accumulateGrade1:number=0;
-let ExceptionalStudent1:boolean=false;
+//Create an object named product with the following properties: id, name, price, and tags
+//  (an array of strings).
+//Clone the object into a new variable named newProduct.
+//Clone the tags property into a new property of the cloned object called archivedTags.
+//Change the name, price, and tags properties of the cloned object.
+//Print both the product variable, and the newProduct variable
 
-for (let i=0;i<grades1.length;i++){
- const grade :number=grades1[i];
- switch(grade){
-  case -1:
-   continue;
-  case 1000:
-    ExceptionalStudent1=true;
-    break;
-  default:
-  accumulateGrade1=accumulateGrade1+grade;
 
+const product={
+  id:100,
+  name1:'lavadora',
+  price:1000,
+  tags:['a1','a2','a3']
 }
-countergrades++;
-}
+let newProduct={...product};
+console.log(newProduct);
+//clone the tags property into a new property of the cloned object called archivedTags
+let archivedTags=[...product.tags];
 
-if (ExceptionalStudent1){
-    console.log(`Exceptional student! Average is 100`)
-}
-else
-{
+// Modify the cloned object : 
+newProduct.id=101;
+newProduct.name1='lavaseca';
+newProduct.price=1800;
 
-    console.log(`\Average score: ${accumulateGrade1/countergrades}`);
-}
+
+console.log(newProduct);

@@ -1,0 +1,16 @@
+{
+  "scripts": {
+    "start": "node -r ts-node/register scripts/run-homework.cjs",
+    "start:file": "node -r ts-node/register",
+    "build": "echo tsc"
+  },
+  "devDependencies": {
+    "@types/node": "^25.3.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "@types/prompt-sync": "^4.2.3",
+    "prompt-sync": "^4.2.0"
+  }
+}
